@@ -16,5 +16,10 @@ namespace Slutprojektet
         {
             InitializeComponent();
         }
+
+        private void ActionBtn_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+        }
     }
 }

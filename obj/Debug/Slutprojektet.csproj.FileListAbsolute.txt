@@ -1,0 +1,10 @@
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\bin\Debug\Slutprojektet.exe.config
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\bin\Debug\Slutprojektet.exe
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\bin\Debug\Slutprojektet.pdb
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.csprojAssemblyReference.cache
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.Form1.resources
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.Properties.Resources.resources
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.csproj.GenerateResource.cache
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.csproj.CoreCompileInputs.cache
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.exe
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.pdb
