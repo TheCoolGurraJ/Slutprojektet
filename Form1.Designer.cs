@@ -32,10 +32,12 @@
             this.Sova_btn = new System.Windows.Forms.Button();
             this.Shop_btn = new System.Windows.Forms.Button();
             this.Inv_btn = new System.Windows.Forms.Button();
-            this.Desc_Lbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.HeatLbl = new System.Windows.Forms.Label();
+            this.HeatActual = new System.Windows.Forms.Label();
+            this.Desc_Lbl = new System.Windows.Forms.Label();
+            this.ClockLbl = new System.Windows.Forms.Label();
+            this.ClockActual = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Work_btn
@@ -86,6 +88,39 @@
             this.Inv_btn.UseVisualStyleBackColor = false;
             this.Inv_btn.Click += new System.EventHandler(this.ActionBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(358, 120);
+            this.label1.MinimumSize = new System.Drawing.Size(100, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 32);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Event Box";
+            // 
+            // HeatLbl
+            // 
+            this.HeatLbl.AutoSize = true;
+            this.HeatLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeatLbl.Location = new System.Drawing.Point(12, 18);
+            this.HeatLbl.MinimumSize = new System.Drawing.Size(25, 20);
+            this.HeatLbl.Name = "HeatLbl";
+            this.HeatLbl.Size = new System.Drawing.Size(74, 32);
+            this.HeatLbl.TabIndex = 6;
+            this.HeatLbl.Text = "Heat:";
+            // 
+            // HeatActual
+            // 
+            this.HeatActual.AutoSize = true;
+            this.HeatActual.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeatActual.Location = new System.Drawing.Point(92, 18);
+            this.HeatActual.MinimumSize = new System.Drawing.Size(50, 20);
+            this.HeatActual.Name = "HeatActual";
+            this.HeatActual.Size = new System.Drawing.Size(50, 32);
+            this.HeatActual.TabIndex = 7;
+            this.HeatActual.Text = "0%";
+            // 
             // Desc_Lbl
             // 
             this.Desc_Lbl.AutoSize = true;
@@ -99,46 +134,37 @@
             this.Desc_Lbl.Size = new System.Drawing.Size(600, 300);
             this.Desc_Lbl.TabIndex = 4;
             // 
-            // label1
+            // ClockLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(358, 120);
-            this.label1.MinimumSize = new System.Drawing.Size(100, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 32);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Event Box";
+            this.ClockLbl.AutoSize = true;
+            this.ClockLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockLbl.Location = new System.Drawing.Point(208, 18);
+            this.ClockLbl.MinimumSize = new System.Drawing.Size(25, 20);
+            this.ClockLbl.Name = "ClockLbl";
+            this.ClockLbl.Size = new System.Drawing.Size(74, 32);
+            this.ClockLbl.TabIndex = 8;
+            this.ClockLbl.Text = "Time:";
             // 
-            // label2
+            // ClockActual
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 18);
-            this.label2.MinimumSize = new System.Drawing.Size(25, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 32);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Heat:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(92, 18);
-            this.label3.MinimumSize = new System.Drawing.Size(50, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 32);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "0%";
+            this.ClockActual.AutoSize = true;
+            this.ClockActual.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockActual.Location = new System.Drawing.Point(288, 18);
+            this.ClockActual.MinimumSize = new System.Drawing.Size(50, 20);
+            this.ClockActual.Name = "ClockActual";
+            this.ClockActual.Size = new System.Drawing.Size(73, 32);
+            this.ClockActual.TabIndex = 9;
+            this.ClockActual.Text = "00:00";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 613);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ClockActual);
+            this.Controls.Add(this.ClockLbl);
+            this.Controls.Add(this.HeatActual);
+            this.Controls.Add(this.HeatLbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Desc_Lbl);
             this.Controls.Add(this.Inv_btn);
@@ -159,10 +185,12 @@
         private System.Windows.Forms.Button Sova_btn;
         private System.Windows.Forms.Button Shop_btn;
         private System.Windows.Forms.Button Inv_btn;
-        private System.Windows.Forms.Label Desc_Lbl;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label HeatLbl;
+        private System.Windows.Forms.Label HeatActual;
+        private System.Windows.Forms.Label Desc_Lbl;
+        private System.Windows.Forms.Label ClockLbl;
+        private System.Windows.Forms.Label ClockActual;
     }
 }
 
