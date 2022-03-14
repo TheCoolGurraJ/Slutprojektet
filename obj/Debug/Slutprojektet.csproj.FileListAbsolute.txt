@@ -8,4 +8,5 @@ C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.csproj.CoreCompileInputs.cache
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.exe
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.pdb
-C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.Form2.resources
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.WorkForm.resources
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.ShopForm.resources

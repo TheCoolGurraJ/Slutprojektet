@@ -14,6 +14,8 @@ namespace Slutprojektet
     {
         int WorkHours = 8;
         int Clock = 0; // hours after 00:00
+        int Money;
+        int Days;
 
 
         public Form1()
@@ -24,33 +26,33 @@ namespace Slutprojektet
         private void ActionBtn_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            switch(btn.Text[1])
-            {  
+            switch (btn.Text[1])
+            {
                 /* 
                  Call the right method based on what button that called the event.
                  Second letter is different in every button.
                  */
-             
-                    //Work
+
+                //Work
                 case 'o':
                     Work();
                     break;
-                    //Shop
+                //Shop
                 case 'h':
                     Shop();
                     break;
-                    //Inventory
+                //Inventory
                 case 'n':
                     Inventory();
                     break;
-                    //Sleep
+                //Sleep
                 case 'l':
                     Sleep();
                     break;
             }
 
             //Update the clock.
-            if(Clock>=10)
+            if (Clock >= 10)
             {
                 ClockActual.Text = Clock + ":00";
             }
@@ -58,19 +60,58 @@ namespace Slutprojektet
             {
                 ClockActual.Text = "0" + Clock + ":00";
             }
+
+            //Update the money.
+            MoneyActual.Text = Money + "$";
+
+
+            //Random Event area 
+            if (Days == 3)
+            {
+                //intro to drugz
+            }
+
+            if (Days == 5 && Clock == 13)
+            {
+                //heat gets to 50%
+            }
+
         }
 
         private void Work()
         {
-            string WorkText = "You worked " + WorkHours + " hours at the burger joint.";
-            Desc_Lbl.Text = WorkText;
-            Clock += WorkHours;
+            WorkForm WorkFrm = new WorkForm();
+
+            WorkFrm.ShowDialog();
+            WorkHours = WorkFrm.HoursChoosen;
+
+            if (Clock >= 22)
+            {
+                Desc_Lbl.Text = "You are to tired to work.";
+            }
+            else if (Clock + WorkHours > 22)
+            {
+                Desc_Lbl.Text = "You can't work that long.";
+            }
+            else if (WorkHours != 0)
+            {
+                string WorkText = "You worked " + WorkHours + " hours at the burger joint.";
+                Desc_Lbl.Text = WorkText;
+                Clock += WorkHours;
+                Money += WorkHours * 8;
+            }
+
         }
 
         private void Shop()
         {
-            (new Form2()).ShowDialog();
+            ShopForm Shopfrm = new ShopForm();
+            Shopfrm.ShowDialog();
+
+            
         }
+
+    
 
         private void Inventory()
         {
@@ -81,12 +122,20 @@ namespace Slutprojektet
         {
             if(Clock >=22)
             {
-                Clock += 8;
+                Clock = 8;
+                Desc_Lbl.Text = "You slept all night like a baby. You feel refreshed!";
+                Days++;
             }
             else
             {
                 Clock += 1;
+                Desc_Lbl.Text = "You took a short nap. You feel refreshed!";
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

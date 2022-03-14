@@ -38,6 +38,8 @@
             this.Desc_Lbl = new System.Windows.Forms.Label();
             this.ClockLbl = new System.Windows.Forms.Label();
             this.ClockActual = new System.Windows.Forms.Label();
+            this.MoneyLbl = new System.Windows.Forms.Label();
+            this.MoneyActual = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Work_btn
@@ -126,7 +128,7 @@
             this.Desc_Lbl.AutoSize = true;
             this.Desc_Lbl.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.Desc_Lbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Desc_Lbl.Font = new System.Drawing.Font("Segoe UI Semilight", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Desc_Lbl.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Desc_Lbl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Desc_Lbl.Location = new System.Drawing.Point(364, 152);
             this.Desc_Lbl.MinimumSize = new System.Drawing.Size(600, 300);
@@ -156,11 +158,36 @@
             this.ClockActual.TabIndex = 9;
             this.ClockActual.Text = "00:00";
             // 
+            // MoneyLbl
+            // 
+            this.MoneyLbl.AutoSize = true;
+            this.MoneyLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoneyLbl.Location = new System.Drawing.Point(409, 18);
+            this.MoneyLbl.MinimumSize = new System.Drawing.Size(25, 20);
+            this.MoneyLbl.Name = "MoneyLbl";
+            this.MoneyLbl.Size = new System.Drawing.Size(96, 32);
+            this.MoneyLbl.TabIndex = 10;
+            this.MoneyLbl.Text = "Money:";
+            // 
+            // MoneyActual
+            // 
+            this.MoneyActual.AutoSize = true;
+            this.MoneyActual.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoneyActual.Location = new System.Drawing.Point(511, 18);
+            this.MoneyActual.MinimumSize = new System.Drawing.Size(50, 20);
+            this.MoneyActual.Name = "MoneyActual";
+            this.MoneyActual.Size = new System.Drawing.Size(50, 32);
+            this.MoneyActual.TabIndex = 11;
+            this.MoneyActual.Text = "0$";
+            this.MoneyActual.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 613);
+            this.Controls.Add(this.MoneyActual);
+            this.Controls.Add(this.MoneyLbl);
             this.Controls.Add(this.ClockActual);
             this.Controls.Add(this.ClockLbl);
             this.Controls.Add(this.HeatActual);
@@ -191,6 +218,8 @@
         private System.Windows.Forms.Label Desc_Lbl;
         private System.Windows.Forms.Label ClockLbl;
         private System.Windows.Forms.Label ClockActual;
+        private System.Windows.Forms.Label MoneyLbl;
+        private System.Windows.Forms.Label MoneyActual;
     }
 }
 

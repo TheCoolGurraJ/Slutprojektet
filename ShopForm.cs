@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace Slutprojektet
 {
-    public partial class Form2 : Form
+    public partial class ShopForm : Form
     {
-        public Form2()
+        public ShopForm()
         {
             InitializeComponent();
+        }
+
+        private void ShopBtn_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+
+            btn.BackColor = Color.Black;
+            btn.Enabled = false;
         }
     }
 }
