@@ -16,6 +16,9 @@ namespace Slutprojektet
         int Clock = 0; // hours after 00:00
         int Money;
         int Days;
+        int ExtraMoney;
+
+        
 
 
         public Form1()
@@ -61,8 +64,7 @@ namespace Slutprojektet
                 ClockActual.Text = "0" + Clock + ":00";
             }
 
-            //Update the money.
-            MoneyActual.Text = Money + "$";
+            UpdateMoney();
 
 
             //Random Event area 
@@ -105,10 +107,15 @@ namespace Slutprojektet
 
         private void Shop()
         {
-            ShopForm Shopfrm = new ShopForm();
+
+            ShopForm Shopfrm = new ShopForm(Money,out int NewMoney,out int _ExtraMoney);
             Shopfrm.ShowDialog();
 
-            
+            Money = NewMoney;
+            UpdateMoney();
+
+            ExtraMoney = _ExtraMoney;
+
         }
 
     
@@ -131,6 +138,12 @@ namespace Slutprojektet
                 Clock += 1;
                 Desc_Lbl.Text = "You took a short nap. You feel refreshed!";
             }
+        }
+
+        private void UpdateMoney()
+        {
+            //Update the money.
+            MoneyActual.Text = Money + "$";
         }
 
         private void label2_Click(object sender, EventArgs e)
