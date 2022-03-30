@@ -1,4 +1,6 @@
-﻿namespace Slutprojektet
+﻿using System.Windows.Forms;
+
+namespace Slutprojektet
 {
     partial class Form1
     {
@@ -156,7 +158,7 @@
             this.ClockActual.Name = "ClockActual";
             this.ClockActual.Size = new System.Drawing.Size(73, 32);
             this.ClockActual.TabIndex = 9;
-            this.ClockActual.Text = "00:00";
+            this.ClockActual.Text = "08:00";
             // 
             // MoneyLbl
             // 
