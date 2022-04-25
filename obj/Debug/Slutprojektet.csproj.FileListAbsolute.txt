@@ -2,7 +2,6 @@ C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\bin\Debug\Slutprojektet
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\bin\Debug\Slutprojektet.exe
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\bin\Debug\Slutprojektet.pdb
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.csprojAssemblyReference.cache
-C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.Form1.resources
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.Properties.Resources.resources
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.csproj.GenerateResource.cache
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.csproj.CoreCompileInputs.cache
@@ -10,3 +9,4 @@ C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.pdb
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.WorkForm.resources
 C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.ShopForm.resources
+C:\Users\gustav.jonsson12\Documents\GitHub\Slutprojektet\obj\Debug\Slutprojektet.MainForm.resources

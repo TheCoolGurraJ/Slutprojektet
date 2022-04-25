@@ -37,8 +37,10 @@ namespace Slutprojektet
 
             InitializeComponent();
             NewMoney = PlayerMoney;
-        }
 
+            ShopMoneyActual.Text = PlayerMoney + "$";
+        }
+        
         private void ShopBtn_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -53,6 +55,8 @@ namespace Slutprojektet
                         sp.IsBought = true;
                         NewMoney -= sp.Price;
                         ExtraMoney += sp.ExtraMoney;
+                        ShopMoneyActual.Text = NewMoney + "$";
+
 
                         btn.DataBindings.Add(new Binding("BackColor", mus, "BackgroundColor"));
                         btn.DataBindings.Add(new Binding("Enabled", mus, "Enabled"));

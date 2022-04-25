@@ -40,11 +40,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.MoneyLbl = new System.Windows.Forms.Label();
+            this.ShopMoneyActual = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Pot1Btn
             // 
-            this.Pot1Btn.BackColor = System.Drawing.Color.Silver;
+            this.Pot1Btn.BackColor = System.Drawing.Color.YellowGreen;
+            this.Pot1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pot1Btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pot1Btn.Location = new System.Drawing.Point(71, 22);
             this.Pot1Btn.Name = "Pot1Btn";
@@ -57,7 +60,8 @@
             // 
             // Pot2Btn
             // 
-            this.Pot2Btn.BackColor = System.Drawing.Color.Silver;
+            this.Pot2Btn.BackColor = System.Drawing.Color.YellowGreen;
+            this.Pot2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pot2Btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pot2Btn.Location = new System.Drawing.Point(71, 100);
             this.Pot2Btn.Name = "Pot2Btn";
@@ -70,7 +74,8 @@
             // 
             // Strain1Btn
             // 
-            this.Strain1Btn.BackColor = System.Drawing.Color.Silver;
+            this.Strain1Btn.BackColor = System.Drawing.Color.YellowGreen;
+            this.Strain1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Strain1Btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Strain1Btn.Location = new System.Drawing.Point(71, 286);
             this.Strain1Btn.Name = "Strain1Btn";
@@ -83,7 +88,8 @@
             // 
             // Pot3Btn
             // 
-            this.Pot3Btn.BackColor = System.Drawing.Color.Silver;
+            this.Pot3Btn.BackColor = System.Drawing.Color.YellowGreen;
+            this.Pot3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pot3Btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pot3Btn.Location = new System.Drawing.Point(71, 178);
             this.Pot3Btn.Name = "Pot3Btn";
@@ -96,7 +102,8 @@
             // 
             // Strain3Btn
             // 
-            this.Strain3Btn.BackColor = System.Drawing.Color.Silver;
+            this.Strain3Btn.BackColor = System.Drawing.Color.YellowGreen;
+            this.Strain3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Strain3Btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Strain3Btn.Location = new System.Drawing.Point(71, 442);
             this.Strain3Btn.Name = "Strain3Btn";
@@ -109,7 +116,8 @@
             // 
             // Strain2Btn
             // 
-            this.Strain2Btn.BackColor = System.Drawing.Color.Silver;
+            this.Strain2Btn.BackColor = System.Drawing.Color.YellowGreen;
+            this.Strain2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Strain2Btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Strain2Btn.Location = new System.Drawing.Point(71, 364);
             this.Strain2Btn.Name = "Strain2Btn";
@@ -127,9 +135,9 @@
             this.label1.Location = new System.Drawing.Point(273, 44);
             this.label1.MinimumSize = new System.Drawing.Size(100, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 40);
+            this.label1.Size = new System.Drawing.Size(300, 40);
             this.label1.TabIndex = 7;
-            this.label1.Text = "- Costs: 200$   Extra: 25$";
+            this.label1.Text = "- Costs: 200$   Extra: +25$";
             // 
             // label2
             // 
@@ -138,9 +146,9 @@
             this.label2.Location = new System.Drawing.Point(273, 122);
             this.label2.MinimumSize = new System.Drawing.Size(100, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 40);
+            this.label2.Size = new System.Drawing.Size(300, 40);
             this.label2.TabIndex = 8;
-            this.label2.Text = "- Costs: 300$   Extra: 50$";
+            this.label2.Text = "- Costs: 300$   Extra: +50$";
             // 
             // label3
             // 
@@ -149,9 +157,9 @@
             this.label3.Location = new System.Drawing.Point(273, 200);
             this.label3.MinimumSize = new System.Drawing.Size(100, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(293, 40);
+            this.label3.Size = new System.Drawing.Size(310, 40);
             this.label3.TabIndex = 9;
-            this.label3.Text = "- Costs: 500$   Extra: 100$";
+            this.label3.Text = "- Costs: 500$   Extra: +100$";
             // 
             // label4
             // 
@@ -160,9 +168,9 @@
             this.label4.Location = new System.Drawing.Point(273, 308);
             this.label4.MinimumSize = new System.Drawing.Size(100, 40);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(293, 40);
+            this.label4.Size = new System.Drawing.Size(310, 40);
             this.label4.TabIndex = 10;
-            this.label4.Text = "- Costs: 500$   Extra: 100$";
+            this.label4.Text = "- Costs: 500$   Extra: +100$";
             // 
             // label5
             // 
@@ -171,9 +179,9 @@
             this.label5.Location = new System.Drawing.Point(273, 386);
             this.label5.MinimumSize = new System.Drawing.Size(100, 40);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(293, 40);
+            this.label5.Size = new System.Drawing.Size(310, 40);
             this.label5.TabIndex = 11;
-            this.label5.Text = "- Costs: 750$   Extra: 150$";
+            this.label5.Text = "- Costs: 750$   Extra: +150$";
             // 
             // label6
             // 
@@ -182,15 +190,40 @@
             this.label6.Location = new System.Drawing.Point(273, 464);
             this.label6.MinimumSize = new System.Drawing.Size(100, 40);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(306, 40);
+            this.label6.Size = new System.Drawing.Size(323, 40);
             this.label6.TabIndex = 12;
-            this.label6.Text = "- Costs: 1000$   Extra: 200$";
+            this.label6.Text = "- Costs: 1000$   Extra: +200$";
+            // 
+            // MoneyLbl
+            // 
+            this.MoneyLbl.AutoSize = true;
+            this.MoneyLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoneyLbl.Location = new System.Drawing.Point(643, 44);
+            this.MoneyLbl.MinimumSize = new System.Drawing.Size(100, 40);
+            this.MoneyLbl.Name = "MoneyLbl";
+            this.MoneyLbl.Size = new System.Drawing.Size(100, 40);
+            this.MoneyLbl.TabIndex = 13;
+            this.MoneyLbl.Text = "Money:";
+            // 
+            // ShopMoneyActual
+            // 
+            this.ShopMoneyActual.AutoSize = true;
+            this.ShopMoneyActual.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShopMoneyActual.Location = new System.Drawing.Point(749, 44);
+            this.ShopMoneyActual.MinimumSize = new System.Drawing.Size(100, 40);
+            this.ShopMoneyActual.Name = "ShopMoneyActual";
+            this.ShopMoneyActual.Size = new System.Drawing.Size(100, 40);
+            this.ShopMoneyActual.TabIndex = 14;
+            this.ShopMoneyActual.Text = "0$";
             // 
             // ShopForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGreen;
             this.ClientSize = new System.Drawing.Size(942, 537);
+            this.Controls.Add(this.ShopMoneyActual);
+            this.Controls.Add(this.MoneyLbl);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -226,5 +259,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label MoneyLbl;
+        private System.Windows.Forms.Label ShopMoneyActual;
     }
 }

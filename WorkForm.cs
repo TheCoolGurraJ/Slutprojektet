@@ -13,15 +13,21 @@ namespace Slutprojektet
     public partial class WorkForm : Form
     {
         public int HoursChoosen { get; set; } //A public variable to describe how many hours the player have choosen. 
+        public bool UnlockIllegal;
+        public bool PickedIllegal;
 
         public WorkForm()
         {
-            InitializeComponent();
+            InitializeComponent();  
+           
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            if (UnlockIllegal)
+            {
+                illegal_btn.Visible = true;
+            }
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -45,9 +51,10 @@ namespace Slutprojektet
                 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void illegal_btn_Click(object sender, EventArgs e)
         {
-
+            PickedIllegal = true;
+            this.Close();
         }
     }
 }
