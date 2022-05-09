@@ -124,7 +124,7 @@ namespace Slutprojektet
                 //Events trigger if a randomized dice roll is correct, an event hasn't already triggered and on certain days and times
 
                 //robbery
-                if (random.Next(0,risk) == 5 && Money > 2000 && Cutscene_ongoing == false)
+                if (random.Next(2,risk) == 5 && Money > 2000 && !Cutscene_ongoing)
                 {
                     Desc_Lbl.Text = "You were walking around the neighborhood when you suddenly pass out." +
                         "\n" +
@@ -147,7 +147,7 @@ namespace Slutprojektet
                     StartCutscene();
                 }
             
-                if (Days < 3 && Clock == random.Next(0, 25) && random.Next(0,5) == 3 && Cutscene_ongoing == false) // between 0-24
+                if (Days < 3 && Clock == random.Next(0, 25) && random.Next(0,5) == 3 && !Cutscene_ongoing) // between 0-24
                 {
 
                     Desc_Lbl.Text = "You tripped on a trashcan and your medicine fell out of your pockets right infront of a police officer." +
@@ -161,7 +161,7 @@ namespace Slutprojektet
                     StartCutscene();
                 }
 
-                if (Clock == random.Next(0,risk) && Cutscene_ongoing == false)
+                if (Clock == random.Next(0,risk) && !Cutscene_ongoing)
                 {
                     Desc_Lbl.Text = "An old lady gave you some money because \"you seemed so nice\". "+
                         "\n" +
@@ -176,7 +176,7 @@ namespace Slutprojektet
                     StartCutscene();
                 }
 
-                if (Clock == random.Next(0, risk) && Cutscene_ongoing == false)
+                if (Days > 4 && Clock == random.Next(0, risk) && !Cutscene_ongoing)
                 {
                     Desc_Lbl.Text = "Your latest client was caught by the FBI and ratted you out in exchange for a piece of candy." +
                         "\n" +
@@ -259,6 +259,13 @@ namespace Slutprojektet
                 Clock = 8;
                 Desc_Lbl.Text = "You slept all night like a baby. You feel refreshed!";
                 UpdateDays();
+
+            if (Heat >= 15)
+            {
+                //you lose heat by sleeping
+                Heat -= 15;
+                UpdateHeat();
+            }
         }
 
         private void UpdateClock()
@@ -350,13 +357,6 @@ namespace Slutprojektet
                         "\n" +
                         "Wage: " + WagePerHour + "$/hour";
                 }
-            }
-
-            if (Heat >= 15)
-            {
-                //you lose heat by sleeping
-                Heat -= 15;
-                UpdateHeat();
             }
         }
 
