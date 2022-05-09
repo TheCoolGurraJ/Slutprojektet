@@ -21,6 +21,7 @@ namespace Slutprojektet
         private ShopItem[] si;
         public ShopItem[] shopitems
         {
+            //Instantiate shopitem object
             get { return si; }
             set { si = value; }
         }
@@ -52,12 +53,16 @@ namespace Slutprojektet
                     if(NewMoney >= sp.Price && !sp.IsBought)
                     {
                         //Item has been bought
+
                         sp.IsBought = true;
+                        //Update money
                         NewMoney -= sp.Price;
+                        //Pass the extramoney from to property that will pass it to Main.cs
                         ExtraMoney += sp.ExtraMoney;
+                        //Update the money-counter
                         ShopMoneyActual.Text = NewMoney + "$";
 
-
+                        //Make the buttons black and un-clickable
                         btn.DataBindings.Add(new Binding("BackColor", mus, "BackgroundColor"));
                         btn.DataBindings.Add(new Binding("Enabled", mus, "Enabled"));
                     }
@@ -71,6 +76,7 @@ namespace Slutprojektet
 
         private void ShopForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            // .Validate to update the buttons with the corresponding databindings
             this.Validate();
             mus.Save();
         }
@@ -81,6 +87,7 @@ namespace Slutprojektet
             mus.BackgroundColor = Color.Black;
             mus.Enabled = false;
 
+            //this loops for the entire array of buttons to add databindings that make them black and disabled
             foreach (var btn in this.Controls.OfType<Button>())
             {
                 foreach (ShopItem sp in shopitems)
@@ -103,17 +110,20 @@ namespace Slutprojektet
         public int ID;
         public int Price;
 
+        //any given item you can buy has properties that reflect what they do and how much they cost.
         public ShopItem(bool _IsBought, int extra, int id, int _price)
         {
             IsBought = _IsBought;
-            ExtraMoney = extra;
+            ExtraMoney = extra; //how much extra money the player earns
             ID = id;
-            Price = _price;
+            Price = _price; //the price of the item.
         }
     }
 
     public class MyUserSettings : ApplicationSettingsBase
     {
+
+        //this is basically to make the buttons black and disabled at run-time.
         [UserScopedSetting()]
         public Color BackgroundColor
         {
@@ -128,7 +138,7 @@ namespace Slutprojektet
         }
 
         [UserScopedSettingAttribute()]
-        [DefaultSettingValueAttribute("false")]
+        [DefaultSettingValueAttribute("false")] //set the databinding "Enabled" to default to disabled
 
         public bool Enabled
         {

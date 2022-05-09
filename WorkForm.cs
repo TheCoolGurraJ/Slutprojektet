@@ -26,10 +26,11 @@ namespace Slutprojektet
         {
             if (UnlockIllegal)
             {
-                illegal_btn.Visible = true;
+                //if player has unlocked medicine then show it on the form
+                illegal_btn.Visible = true; 
             }
         }
-
+        //All of these callbacks is to set the hours the player has choosen to the variable that is passed to the Main.cs form
         private void btn2_Click(object sender, EventArgs e)
         {
             HoursChoosen = 2;
@@ -53,7 +54,7 @@ namespace Slutprojektet
 
         private void illegal_btn_Click(object sender, EventArgs e)
         {
-            PickedIllegal = true;
+            PickedIllegal = true; //Set PickedIllegal to true if the player clicked the "sell medicine"-button
             this.Close();
         }
     }

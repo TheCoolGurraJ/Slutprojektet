@@ -34,7 +34,7 @@ namespace Slutprojektet
             this.Work_btn = new System.Windows.Forms.Button();
             this.Sleep_btn = new System.Windows.Forms.Button();
             this.Shop_btn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DOTWLbl = new System.Windows.Forms.Label();
             this.HeatLbl = new System.Windows.Forms.Label();
             this.HeatActual = new System.Windows.Forms.Label();
             this.Desc_Lbl = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@ namespace Slutprojektet
             // 
             this.Work_btn.BackColor = System.Drawing.Color.Salmon;
             this.Work_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Work_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Work_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Work_btn.Location = new System.Drawing.Point(18, 176);
             this.Work_btn.Name = "Work_btn";
             this.Work_btn.Size = new System.Drawing.Size(170, 72);
@@ -64,7 +64,7 @@ namespace Slutprojektet
             // 
             this.Sleep_btn.BackColor = System.Drawing.Color.Turquoise;
             this.Sleep_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sleep_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sleep_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sleep_btn.Location = new System.Drawing.Point(18, 355);
             this.Sleep_btn.Name = "Sleep_btn";
             this.Sleep_btn.Size = new System.Drawing.Size(170, 72);
@@ -77,7 +77,7 @@ namespace Slutprojektet
             // 
             this.Shop_btn.BackColor = System.Drawing.Color.YellowGreen;
             this.Shop_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Shop_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Shop_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Shop_btn.Location = new System.Drawing.Point(18, 264);
             this.Shop_btn.Name = "Shop_btn";
             this.Shop_btn.Size = new System.Drawing.Size(170, 72);
@@ -86,16 +86,16 @@ namespace Slutprojektet
             this.Shop_btn.UseVisualStyleBackColor = false;
             this.Shop_btn.Click += new System.EventHandler(this.ActionBtn_Click);
             // 
-            // label1
+            // DOTWLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(358, 120);
-            this.label1.MinimumSize = new System.Drawing.Size(100, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 32);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Event Box";
+            this.DOTWLbl.AutoSize = true;
+            this.DOTWLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOTWLbl.Location = new System.Drawing.Point(358, 120);
+            this.DOTWLbl.MinimumSize = new System.Drawing.Size(100, 20);
+            this.DOTWLbl.Name = "DOTWLbl";
+            this.DOTWLbl.Size = new System.Drawing.Size(104, 32);
+            this.DOTWLbl.TabIndex = 5;
+            this.DOTWLbl.Text = "Monday";
             // 
             // HeatLbl
             // 
@@ -122,9 +122,9 @@ namespace Slutprojektet
             // Desc_Lbl
             // 
             this.Desc_Lbl.AutoSize = true;
-            this.Desc_Lbl.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Desc_Lbl.BackColor = System.Drawing.SystemColors.Control;
             this.Desc_Lbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Desc_Lbl.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Desc_Lbl.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Desc_Lbl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Desc_Lbl.Location = new System.Drawing.Point(364, 152);
             this.Desc_Lbl.MaximumSize = new System.Drawing.Size(600, 300);
@@ -132,7 +132,6 @@ namespace Slutprojektet
             this.Desc_Lbl.Name = "Desc_Lbl";
             this.Desc_Lbl.Size = new System.Drawing.Size(600, 300);
             this.Desc_Lbl.TabIndex = 4;
-            this.Desc_Lbl.TextChanged += new System.EventHandler(this.Desc_Lbl_TextChanged);
             // 
             // ClockLbl
             // 
@@ -213,7 +212,7 @@ namespace Slutprojektet
             this.Controls.Add(this.ClockLbl);
             this.Controls.Add(this.HeatActual);
             this.Controls.Add(this.HeatLbl);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DOTWLbl);
             this.Controls.Add(this.Desc_Lbl);
             this.Controls.Add(this.Shop_btn);
             this.Controls.Add(this.Sleep_btn);
@@ -231,7 +230,7 @@ namespace Slutprojektet
         private System.Windows.Forms.Button Work_btn;
         private System.Windows.Forms.Button Sleep_btn;
         private System.Windows.Forms.Button Shop_btn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DOTWLbl;
         private System.Windows.Forms.Label HeatLbl;
         private System.Windows.Forms.Label HeatActual;
         private System.Windows.Forms.Label Desc_Lbl;
