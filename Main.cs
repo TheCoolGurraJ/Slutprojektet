@@ -31,8 +31,10 @@ namespace Slutprojektet
         bool warned = false; //true if player has been warned to not get heat to 100%.
         Color FadeColor = Color.FromArgb(100, Color.Blue);
         int risk = 3;
+        Random random = new Random();
 
-       public ShopItem[] shopItems = new ShopItem[6];
+
+        public ShopItem[] shopItems = new ShopItem[6];
 
         
 
@@ -84,7 +86,6 @@ namespace Slutprojektet
 
 
             //Random Event area 
-            Random random = new Random();
 
             //warning to player
             if (Heat >= 70 && !warned) // MAKE THIS TRIGGER ONLY ONCE
