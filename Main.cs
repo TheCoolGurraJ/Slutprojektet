@@ -208,7 +208,10 @@ namespace Slutprojektet
             }
             else if (Clock >= 22)
             {
-                Desc_Lbl.Text = "You are to tired to work.";
+                Desc_Lbl.Text = "The burger joint has closed for the day." +
+                    "\n"+
+                    "\n" +
+                   "Come back tomorrow at 8am";
             }
             else if (Clock + WorkHours > 22)
             {
